@@ -74,7 +74,7 @@ def search_clinical_trials(condition):
             }
         ],
     }
-    return mock_trials.get(condition.lower(), [])
+    return mock_trials.get(condition.lower(), [])  # noqa: FURB184
 
 
 # Initialize OpenAI client

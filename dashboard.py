@@ -59,7 +59,7 @@ def callback():
         timeout=10
     )
 
-    token_data = token_response.json()
+    token_data = token_response.json()  # noqa: FURB184
     access_token = token_data.get("access_token")
     patient_id = token_data.get("patient")
 
